@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>The State of Organizational AI · PerformanceLabs.AI × Aplora.AI · Q2 2026</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- ============== MASTHEAD ============== -->
+<header class="masthead">
+  <div class="container">
+    <div class="masthead-grid">
+      <div class="masthead-logo">
+        PerformanceLabs.AI <span class="x">×</span> Aplora.AI
+      </div>
+      <nav class="masthead-meta">
+        <span>Field Report · Q2 2026</span>
+      </nav>
+      <div class="masthead-nav">
+        <a href="#patterns">Patterns</a>
+        <a href="#research">Research</a>
+        <a href="#forecast">Forecast</a>
+      </div>
+    </div>
+  </div>
+</header>
+
+<!-- ============== HERO ============== -->
+<section class="hero">
+  <div class="container">
+    <div class="hero-volume">
+      <div class="title">The State of Organizational AI</div>
+      <div class="rule-fill"></div>
+      <div class="issue">№ 01 · April 2026 · Field Report</div>
+    </div>
+
+    <div class="hero-grid">
+      <div class="hero-headline reveal">
+        <div class="eyebrow eyebrow-accent eyebrow-rule" style="margin-bottom: 28px;">A report from the operator seat</div>
+        <h1>The Real AI Work: <em>Executive Clarity</em> Under Constant Change.</h1>
+        <p class="hero-deck">A field report on what we see inside organizations every week, what the research confirms, and why <strong>the next ninety days will be harder than the last nine months</strong>.</p>
+      </div>
+      <div class="hero-visual reveal">
+        <div id="hero-diagram" style="width:100%;"></div>
+      </div>
+    </div>
+
+    <div class="byline-strip">
+      <div class="byline-cell">
+        <div class="k">Authors</div>
+        <div class="v">PerformanceLabs.AI<br>+ Aplora.AI</div>
+      </div>
+      <div class="byline-cell">
+        <div class="k">Discipline</div>
+        <div class="v">Forward-Deployed<br>AI Operations</div>
+      </div>
+      <div class="byline-cell">
+        <div class="k">Published</div>
+        <div class="v">April 18, 2026</div>
+      </div>
+      <div class="byline-cell">
+        <div class="k">Read Time</div>
+        <div class="v">12 minutes</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== SUMMARY BAR ============== -->
+<div class="summary-bar">
+  <div class="container">
+    <div class="summary-bar-grid">
+      <div class="summary-cell">
+        <div class="k">§ 01 · Opening</div>
+        <div class="v">The uneven curve</div>
+        <div class="d">Why "behind" is now a universal condition, not a diagnosis.</div>
+      </div>
+      <div class="summary-cell">
+        <div class="k">§ 02 · Field</div>
+        <div class="v">Five live patterns</div>
+        <div class="d">Verbatim from executive conversations in the last seven days.</div>
+      </div>
+      <div class="summary-cell">
+        <div class="k">§ 03 · Research</div>
+        <div class="v">Numbers behind it</div>
+        <div class="d">What Writer, Deloitte, Gartner, Stanford, and a16z confirm.</div>
+      </div>
+      <div class="summary-cell">
+        <div class="k">§ 04 · Forecast</div>
+        <div class="v">Four shifts visible now</div>
+        <div class="d">Each one forces a decision most orgs aren't equipped to make.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============== § 01 THE OPENING ============== -->
+<section class="chapter paper" id="opening">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <div class="col-num">
+        § 01
+        <span class="label">The Opening</span>
+      </div>
+      <div>
+        <h2>The leaders we talk to are not behind because they failed. They are behind because the <em>ground shifted</em>.</h2>
+        <p class="chapter-kicker">This is the most uneven adoption curve in the history of enterprise technology. We operate inside it daily, and we will say this plainly: it is hard. It is hard for us, and we are immersed in it.</p>
+      </div>
+    </div>
+
+    <div class="prose reveal" style="max-width: 68ch;">
+      <p>The organizations we work with span the full distribution. Some have no strategy and know it. Some have a strategy and are six months into executing the wrong one. Some have genuine traction in one function and a vacuum in the other nine. A handful have real maturity, and those leaders are the most worried of all, because they can see how much further there is to go.</p>
+
+      <p>What every leader shares, regardless of where they sit on this curve, is a quiet suspicion that the version of AI strategy they are currently pursuing will not be the version that matters in twelve months. <strong>They are usually right.</strong></p>
+
+      <p>This report is our attempt to share what we see from the operator seat. Not predictions. Not hype. <em>Patterns.</em> The kind of patterns you can only see when you are inside dozens of organizations at once, watching the same mistakes, the same breakthroughs, and the same inflection points repeat across industries and revenue bands.</p>
+
+      <p>If you are a leader reading this, our first goal is to make you feel less alone. Our second is to make the moment navigable.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== § 02 FIELD PATTERNS ============== -->
+<section class="chapter" id="patterns">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <div class="col-num">
+        § 02
+        <span class="label">In the Field</span>
+      </div>
+      <div>
+        <h2>Five patterns we have observed in the past week alone.</h2>
+        <p class="chapter-kicker">These are not hypothetical. Each describes a conversation we had with a real executive at a real organization in the past seven days. We share them because every leader thinks their situation is unique. It almost never is.</p>
+      </div>
+    </div>
+
+    <div class="patterns">
+
+      <article class="pattern-row reveal">
+        <div class="pattern-num">01</div>
+        <div class="pattern-tag">
+          Role without roadmap
+          <span class="freq">Seen 4× this week</span>
+        </div>
+        <div class="pattern-body">
+          <h3>The newly-minted Head of AI who does not know what to do next</h3>
+          <p>Executives we meet have had "AI" added to their title in the last quarter, usually appended to an existing role: Head of Strategy <em>and AI</em>, CTO <em>and AI</em>, COO <em>and AI</em>. The title change is faster than the mandate. They were handed a remit without a roadmap, a budget without a benchmark, and an expectation without a precedent.</p>
+          <div class="meaning">
+            <strong>What it really means</strong>
+            <p>Boards and CEOs are creating AI ownership before they have a theory of the work. The instinct is correct. The execution is isolating.</p>
+          </div>
+        </div>
+        <div class="pattern-chart">
+          <div class="chart-label">Title ≠ mandate</div>
+          <div id="chart-p01"></div>
+          <div class="chart-caption">Speed of title change vs. clarity of mandate.</div>
+        </div>
+      </article>
+
+      <article class="pattern-row reveal">
+        <div class="pattern-num">02</div>
+        <div class="pattern-tag">
+          Strategy lag
+          <span class="freq">Seen 7× this week</span>
+        </div>
+        <div class="pattern-body">
+          <h3>The organization still in early-stage strategy, six months after they thought they would be done</h3>
+          <p>We regularly walk into companies still in assessment mode. Committees. Vendor evaluations. Pilot frameworks. Proof-of-concept debates. Meanwhile, individuals in the organization are already using AI every day — often with personal accounts on public tools, often with proprietary company data.</p>
+          <div class="meaning">
+            <strong>What it really means</strong>
+            <p>The strategy conversation is moving slower than the usage reality. That gap is the single biggest governance risk most organizations have today and cannot see.</p>
+          </div>
+        </div>
+        <div class="pattern-chart">
+          <div class="chart-label">Two speeds</div>
+          <div id="chart-p02"></div>
+          <div class="chart-caption">Leadership strategy vs. workforce usage, same clock.</div>
+        </div>
+      </article>
+
+      <article class="pattern-row reveal">
+        <div class="pattern-num">03</div>
+        <div class="pattern-tag">
+          Adoption chasm
+          <span class="freq">Visible in every org</span>
+        </div>
+        <div class="pattern-body">
+          <h3>Adoption that swings from the lowest floor to the highest ceiling inside the same company</h3>
+          <p>One team is ten times more productive than the team next to them. Marketing is shipping work in hours that used to take weeks. Finance is still waiting for a policy. The super-user gap is not abstract. It is measurable, visible, and it shows up as promotion decisions, compensation debates, and talent departures.</p>
+          <div class="meaning">
+            <strong>What it really means</strong>
+            <p>AI is no longer a tools conversation. It is a workforce restructuring event — and most organizations do not yet have the language for it.</p>
+          </div>
+        </div>
+        <div class="pattern-chart">
+          <div class="chart-label">Productivity divergence</div>
+          <div id="chart-p03"></div>
+          <div class="chart-caption">Same company. Same quarter. Different universes.</div>
+        </div>
+      </article>
+
+      <article class="pattern-row reveal">
+        <div class="pattern-num">04</div>
+        <div class="pattern-tag">
+          The SaaS trap
+          <span class="freq">Dominant mistake</span>
+        </div>
+        <div class="pattern-body">
+          <h3>Six months spent choosing an LLM provider as if it were a SaaS purchase</h3>
+          <p>We have watched leadership teams run formal evaluations to pick "the one." Procurement playbooks. Feature matrices. Vendor scorecards. The assumption underneath is that the choice is durable, the way a CRM or ERP would be durable. It is not. Capabilities converge quarterly. Practitioners ahead of this curve are not choosing a provider — they are building a coordination layer that can switch providers, combine them, and route work intelligently between them.</p>
+          <div class="meaning">
+            <strong>What it really means</strong>
+            <p>Companies treating this as a SaaS decision will re-run the decision in eighteen months with the scars of a switching cost they did not anticipate.</p>
+          </div>
+        </div>
+        <div class="pattern-chart">
+          <div class="chart-label">Mental model shift</div>
+          <div id="chart-p04"></div>
+          <div class="chart-caption">From vendor selection to orchestration architecture.</div>
+        </div>
+      </article>
+
+      <article class="pattern-row reveal">
+        <div class="pattern-num">05</div>
+        <div class="pattern-tag">
+          Cognitive load
+          <span class="freq">Universal</span>
+        </div>
+        <div class="pattern-body">
+          <h3>Leaders who are exhausted and do not want to admit it</h3>
+          <p>Every week we hear a version of: <em>"I do not know where to go. I do not know who to trust. I do not know how to tell the signal from the noise."</em> The tone is usually apologetic, as if it is a personal failing. It is not. The volume of change is genuinely difficult to metabolize, even for full-time practitioners. The executives we respect most are willing to say it out loud.</p>
+          <div class="meaning">
+            <strong>What it really means</strong>
+            <p>The market is confused. If leaders feel frustrated now, the next ninety days will be worse, not better. That is not a reason to panic. It is a reason to stop trying to navigate this alone.</p>
+          </div>
+        </div>
+        <div class="pattern-chart">
+          <div class="chart-label">Rate of change</div>
+          <div id="chart-p05"></div>
+          <div class="chart-caption">Volume of capabilities, pricing, and regulation to metabolize.</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== § 03 RESEARCH ============== -->
+<section class="chapter paper" id="research">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <div class="col-num">
+        § 03
+        <span class="label">The Research</span>
+      </div>
+      <div>
+        <h2>Every field pattern we named has a number behind it. The research is <em>catching up</em> to what we see on the ground.</h2>
+        <p class="chapter-kicker">These are not our opinions. They are validated by the largest enterprise AI studies of the past ninety days. The story is the same from a different angle: leaders are overwhelmed, adoption is uneven, governance is lagging, and the strategy-execution gap is widening.</p>
+      </div>
+    </div>
+
+    <div class="research-grid">
+
+      <article class="research-card reveal">
+        <div class="rc-head">
+          <div class="rc-eyebrow">Fig. 3.1 · Executive overwhelm</div>
+          <div class="rc-fig">n = 1,200 C-suite</div>
+        </div>
+        <h3>A majority of the C-suite says AI is tearing their company apart.</h3>
+        <div id="chart-r1"></div>
+        <p class="rc-takeaway">The instinct to name an AI leader is correct; the <strong>isolation that follows</strong> is the killer. Boards are acting faster than their theory of the work.</p>
+        <div class="rc-source">Writer Enterprise AI Adoption Survey, 2026</div>
+      </article>
+
+      <article class="research-card reveal">
+        <div class="rc-head">
+          <div class="rc-eyebrow">Fig. 3.2 · The execution gap</div>
+          <div class="rc-fig">YoY enterprise data</div>
+        </div>
+        <h3>Access expanded. Production lagged. Governance and talent declined.</h3>
+        <div id="chart-r2"></div>
+        <p class="rc-takeaway">Tool availability is not a readiness signal. The scorecard shows <strong>one line going up and three going sideways or down</strong> — an organizational imbalance the market is still mispricing.</p>
+        <div class="rc-source">Deloitte State of AI in the Enterprise, 2026</div>
+      </article>
+
+      <article class="research-card wide reveal">
+        <div class="rc-head">
+          <div class="rc-eyebrow">Fig. 3.3 · Shadow AI and breach risk</div>
+          <div class="rc-fig">Per 100 executives</div>
+        </div>
+        <h3>67% of executives believe their company has already suffered a data leak from an unapproved AI tool.</h3>
+        <div id="chart-r3"></div>
+        <p class="rc-takeaway">The gap between what leadership is deciding and what the workforce is already doing has become the <strong>single biggest governance exposure</strong> most organizations have today and cannot see.</p>
+        <div class="rc-source">Writer Enterprise AI Adoption Survey, 2026</div>
+      </article>
+
+      <article class="research-card reveal">
+        <div class="rc-head">
+          <div class="rc-eyebrow">Fig. 3.4 · The workforce split</div>
+          <div class="rc-fig">Weekly hours saved</div>
+        </div>
+        <h3>Super-users save 9 hours a week. Laggards save 2.</h3>
+        <div id="chart-r4"></div>
+        <p class="rc-takeaway">Super-users are 3× more likely to have received both a promotion and a raise in the past year. This is <strong>not a tools gap — it is a career-trajectory gap.</strong></p>
+        <div class="rc-source">Writer Enterprise AI Adoption Survey, 2026</div>
+      </article>
+
+      <article class="research-card reveal">
+        <div class="rc-head">
+          <div class="rc-eyebrow">Fig. 3.5 · Multi-model reality</div>
+          <div class="rc-fig">Enterprise share, 2025 vs. 2026</div>
+        </div>
+        <h3>81% of enterprises now run three or more AI model families.</h3>
+        <div id="chart-r5"></div>
+        <p class="rc-takeaway">As models converge toward comparable performance, the paradigm of selecting a single "best" provider is <strong>already obsolete</strong>. The question has moved from <em>which</em> to <em>how they coordinate</em>.</p>
+        <div class="rc-source">a16z Growth · Gartner · AdaptOrch orchestration research, Feb 2026</div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== PULL QUOTE ============== -->
+<section class="pullquote">
+  <div class="pullquote-inner reveal">
+    <div class="pullquote-mark">"</div>
+    <p>If leaders feel frustrated now, the next ninety days will be harder, not easier. The pace of change is <em>accelerating</em>, not stabilizing.</p>
+    <div class="attr">— From the field, April 2026</div>
+  </div>
+</section>
+
+<!-- ============== § 04 FORECAST ============== -->
+<section class="chapter" id="forecast">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <div class="col-num">
+        § 04
+        <span class="label">What Is Coming</span>
+      </div>
+      <div>
+        <h2>Four shifts already visible from the operator seat.</h2>
+        <p class="chapter-kicker">Not forecasts drawn from conference keynotes. Trajectories already moving through vendor roadmaps, procurement conversations, and the week-over-week work we see inside organizations ahead of the curve.</p>
+      </div>
+    </div>
+
+    <div class="forecast-list">
+
+      <article class="forecast-item reveal">
+        <div class="forecast-marker">01</div>
+        <div>
+          <h3>Pricing inverts. Economics move on-premise.</h3>
+          <p>The signal flare went up mid-April when Anthropic moved Claude Enterprise from flat-rate subscriptions to a base-seat-plus-usage model — heavy users projected to pay <strong>2×–3× more at renewal</strong>. This is not an isolated vendor decision. It is the beginning of a structural shift driven by the underlying economics of compute.</p>
+          <div class="face">
+            <strong>What leaders will face</strong>
+            <p>TCO becomes a CFO-level conversation. Expect serious evaluation of hybrid architectures, local model deployment, and private inference. Organizations that plan this in 2026 will pay a fraction of what reactive organizations pay in 2027.</p>
+          </div>
+        </div>
+        <div class="forecast-chart">
+          <div class="cl">Fig. 4.1 · Pricing inversion</div>
+          <div id="chart-f1"></div>
+          <div class="cc">Per-seat cost under flat-rate (old) vs. seat-plus-usage (new).</div>
+        </div>
+      </article>
+
+      <article class="forecast-item reveal">
+        <div class="forecast-marker">02</div>
+        <div>
+          <h3>Governance frameworks that do not exist yet become audit requirements.</h3>
+          <p>The SEC has named AI and cybersecurity as its top 2026 examination priorities, displacing crypto. The EU AI Act is live. U.S. federal posture is diverging from European, creating a compliance matrix most organizations are not equipped to manage. Stanford recorded <strong>233 harmful AI-related incidents in 2024</strong>, a 56% year-over-year increase.</p>
+          <div class="face">
+            <strong>What leaders will face</strong>
+            <p>Regulators have stopped accepting "innovation" as a defense. The cheapest time to build AI governance is before you are required to have it. Most organizations will do this under pressure — the most expensive path available.</p>
+          </div>
+        </div>
+        <div class="forecast-chart">
+          <div class="cl">Fig. 4.2 · Governance risk matrix</div>
+          <div id="chart-f2"></div>
+          <div class="cc">Most organizations plot in the high-pressure, low-readiness quadrant.</div>
+        </div>
+      </article>
+
+      <article class="forecast-item reveal">
+        <div class="forecast-marker">03</div>
+        <div>
+          <h3>The coordination layer becomes the competitive moat.</h3>
+          <p>The question stops being "which LLM are we on" and becomes "how do our agents coordinate across CRM, finance, marketing, and operations." Gartner projects <strong>15% of daily work decisions</strong> will be made autonomously by agentic AI by 2028, up from effectively zero today. The orchestration layer becomes as strategically important as the agents themselves.</p>
+          <div class="face">
+            <strong>What leaders will face</strong>
+            <p>Organizations that architect for multi-agent, multi-model, multi-function coordination now will compound advantages that retrofitting cannot replicate.</p>
+          </div>
+        </div>
+        <div class="forecast-chart">
+          <div class="cl">Fig. 4.3 · Agentic work projection</div>
+          <div id="chart-f3"></div>
+          <div class="cc">Autonomous share of daily work decisions, 2026 → 2028.</div>
+        </div>
+      </article>
+
+      <article class="forecast-item reveal">
+        <div class="forecast-marker">04</div>
+        <div>
+          <h3>Moral drift enters the boardroom vocabulary.</h3>
+          <p>Model drift is the technical term. <em>Moral drift</em> is the business term. It describes what happens when AI systems begin producing outputs that no longer align with your company's values, brand voice, legal obligations, or customer commitments — often invisibly, often only recognized after a customer notices first. Corporate risk heat maps are already adding Ethical Alignment as a standalone category.</p>
+          <div class="face">
+            <strong>What leaders will face</strong>
+            <p>The next generation of enterprise risk management includes continuous observability into AI behavior. Organizations that build this proactively avoid the incidents that will define cautionary tales for the rest of the decade.</p>
+          </div>
+        </div>
+        <div class="forecast-chart">
+          <div class="cl">Fig. 4.4 · Moral drift</div>
+          <div id="chart-f4"></div>
+          <div class="cc">Intended behavior holds; actual behavior drifts under production load.</div>
+        </div>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============== STAT STRIP ============== -->
+<section class="chapter navy" style="padding: 72px 0;">
+  <div class="container">
+    <div class="chapter-head reveal" style="margin-bottom: 40px; padding-bottom: 20px;">
+      <div class="col-num">
+        § 4B
+        <span class="label">At a glance</span>
+      </div>
+      <div>
+        <h2>The numbers defining the quarter.</h2>
+      </div>
+    </div>
+
+    <div class="stat-strip">
+      <div class="stat-cell reveal">
+        <div class="stat-eyebrow">Pricing shift</div>
+        <div class="stat-value"><span class="count-up" data-target="3" data-prefix="2×–" data-suffix="×">2×–3×</span></div>
+        <div id="stat-ctx-a" class="stat-ctx"></div>
+        <div class="stat-desc">Cost increase heavy Claude Enterprise users face under usage-based pricing.</div>
+        <div class="stat-source">The Information · Apr 14, 2026</div>
+      </div>
+
+      <div class="stat-cell reveal">
+        <div class="stat-eyebrow">Agent surge</div>
+        <div class="stat-value"><span class="count-up" data-target="1445" data-suffix="%">1,445%</span></div>
+        <div id="stat-ctx-b" class="stat-ctx"></div>
+        <div class="stat-desc">Increase in enterprise multi-agent system inquiries, Q1'24 → Q2'25.</div>
+        <div class="stat-source">Gartner</div>
+      </div>
+
+      <div class="stat-cell reveal">
+        <div class="stat-eyebrow">Silo reality</div>
+        <div class="stat-value"><span class="count-up" data-target="79" data-suffix="%">79%</span></div>
+        <div id="stat-ctx-c" class="stat-ctx"></div>
+        <div class="stat-desc">Of organizations report AI applications being created in silos.</div>
+        <div class="stat-source">Writer Enterprise Survey, 2026</div>
+      </div>
+
+      <div class="stat-cell reveal">
+        <div class="stat-eyebrow">Talent gap</div>
+        <div class="stat-value"><span class="count-up" data-target="20" data-suffix="%">20%</span></div>
+        <div id="stat-ctx-d" class="stat-ctx"></div>
+        <div class="stat-desc">Of orgs say their talent is highly prepared for AI — down YoY.</div>
+        <div class="stat-source">Deloitte State of AI, 2026</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== § 05 THE HONEST PART ============== -->
+<section class="chapter paper">
+  <div class="container">
+    <div class="chapter-head reveal">
+      <div class="col-num">
+        § 05
+        <span class="label">The Honest Part</span>
+      </div>
+      <div>
+        <h2>Nobody is keeping up. Not the leaders. Not the analysts. Not <em>us</em>.</h2>
+      </div>
+    </div>
+
+    <div class="prose reveal">
+      <p class="standfirst">The feeling of being behind is not a signal that you are bad at your job. It is a signal that you are paying attention.</p>
+
+      <p>We run two firms whose entire reason for existing is to stay at the frontier of applied AI. We have dashboards, daily briefings, private networks, model access, and hands-on practitioner work across dozens of organizations. We still find ourselves, every week, learning about a capability, a pricing change, a regulatory development, or a field pattern that reshapes how we think about the work.</p>
+
+      <p>If it is hard for us, it is more than fair that it is hard for the leaders we work with — the ones with a business to run, a P&L to defend, a board to answer to, and a workforce to guide.</p>
+
+      <p>The leaders who feel most confident right now are usually the <strong>least informed</strong>. The leaders who feel most uncertain are usually the ones thinking most clearly about the real shape of the problem. The answer is not to work harder at keeping up. It is to restructure how your organization metabolizes change — a different problem, and the one we exist to solve.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============== CLOSING ============== -->
+<section class="closing">
+  <div class="container">
+    <div class="closing-grid">
+      <div class="reveal">
+        <div class="section-num" style="color: var(--orange); margin-bottom: 24px;">§ 06 · What to take away</div>
+        <h2>The work of this moment is not picking the right tool. It is building the <em>operating capacity</em> to keep making good decisions while the tools change underneath you.</h2>
+        <p>The organizations strongest at the end of this decade will not be the ones that chose the best LLM in 2026. They will be the ones that built the internal muscle to evaluate, integrate, govern, and redirect AI continuously as the landscape moves.</p>
+        <p>That muscle does not come from a software purchase. It comes from how you structure ownership, how you build feedback loops, how you make governance a design principle rather than a post-incident response, and how you stop trying to solve this as a one-time project.</p>
+      </div>
+
+      <div class="reveal">
+        <div class="closing-cta">
+          <div class="k">An invitation</div>
+          <p>If any of this resonates with where your organization sits right now, we would welcome a conversation. <strong>Not to sell you anything.</strong> To compare notes. The only way any of us navigates a moment like this is by sharing what we are seeing, honestly, with people who are paying attention.</p>
+          <a href="https://performancelabs.ai/contact/" class="cta-button" target="_blank" rel="noopener">Request the conversation →</a>
+        </div>
+
+        <div class="authors">
+          <div class="author-block">
+            <div class="k">Publication</div>
+            <div class="v">PerformanceLabs.AI<br>+ Aplora.AI</div>
+          </div>
+          <div class="author-block">
+            <div class="k">Engagement</div>
+            <div class="v">Forward-Deployed<br>AI Operations</div>
+          </div>
+          <div class="author-block">
+            <div class="k">Edition</div>
+            <div class="v">Vol. I<br>Q2 2026</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============== COLOPHON ============== -->
+<footer class="colophon">
+  <div class="container">
+    <div class="colophon-grid">
+      <div>
+        <h5>About this report</h5>
+        <p>The State of Organizational AI is a field report authored by the operator teams at PerformanceLabs.AI and Aplora.AI. It draws on firsthand engagements with organizations across industries, revenue bands, and AI maturity stages, cross-referenced with the largest enterprise AI research of the past ninety days.</p>
+      </div>
+      <div>
+        <h5>Research sources</h5>
+        <p>Writer Enterprise AI Adoption Survey 2026 · Deloitte State of AI in the Enterprise 2026 · Grant Thornton AI Impact Survey 2026 · Stanford AI Index · Gartner · a16z Growth · The Information · KPMG Board Leadership Center · Aon Global Risk Management Survey · Harvard Law School Forum on Corporate Governance.</p>
+      </div>
+      <div>
+        <h5>Colophon</h5>
+        <p>Set in DM Serif Display and DM Sans, with JetBrains Mono for data. Field Report № 01 · Vol. I · Q2 2026. © PerformanceLabs.AI + Aplora.AI. All observations drawn from firsthand engagements; research cited is drawn from published third-party sources.</p>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="charts.js"></script>
+</body>
+</html>
