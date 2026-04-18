@@ -98,12 +98,12 @@
     // Baseline
     el('line', { x1: x0, y1: y0, x2: x1, y2: y0, stroke: NAVY, 'stroke-width': 1 }, s);
 
-    // Mode dot
-    el('circle', { cx: px(0.32), cy: py(maxY), r: 5, fill: ORANGE_DEEP }, s);
-    el('circle', { cx: px(0.32), cy: py(maxY), r: 10, fill: 'none', stroke: ORANGE_DEEP, 'stroke-width': 1, opacity: 0.4 }, s);
+    // Mode dot — pulses on reveal
+    el('circle', { cx: px(0.32), cy: py(maxY), r: 10, fill: 'none', stroke: ORANGE, 'stroke-width': 1, opacity: 0.4 }, s);
+    el('circle', { cx: px(0.32), cy: py(maxY), r: 5, fill: ORANGE, class: 'hero-pulse hero-pulse-mode' }, s);
 
-    // Frontier dot
-    el('circle', { cx: px(0.88), cy: py(points[Math.round(0.88 * (N - 1))].y), r: 4, fill: RED }, s);
+    // Frontier dot — pulses on reveal
+    el('circle', { cx: px(0.88), cy: py(points[Math.round(0.88 * (N - 1))].y), r: 4, fill: RED, class: 'hero-pulse hero-pulse-frontier' }, s);
 
     // Axis ticks — larger, outside
     const ticks = [
@@ -116,8 +116,12 @@
     ticks.forEach(tk => {
       const x = px(tk.t);
       el('line', { x1: x, y1: y0, x2: x, y2: y0 + 5, stroke: NAVY, 'stroke-width': 1 }, s);
-      txt(s, x, y0 + 20, tk.label, {
-        'font-family': 'DM Sans, sans-serif', 'font-size': 12, fill: GRAY_700, 'text-anchor': 'middle', 'font-weight': 500,
+      // Highlight the "Assessing" tick — it sits directly under the mode peak
+      if (tk.label === 'Assessing') {
+        el('rect', { x: x - 46, y: y0 + 8, width: 92, height: 20, rx: 3, fill: ORANGE, 'fill-opacity': 0.1, stroke: ORANGE, 'stroke-width': 1.5 }, s);
+      }
+      txt(s, x, y0 + 22, tk.label, {
+        'font-family': 'DM Sans, sans-serif', 'font-size': 12, fill: tk.label === 'Assessing' ? ORANGE_DEEP : GRAY_700, 'text-anchor': 'middle', 'font-weight': tk.label === 'Assessing' ? 600 : 500,
       });
     });
 

@@ -851,6 +851,22 @@ section.chapter.paper .pattern-chart { background: var(--cream); }
 .shadow-dot { opacity: 0; }
 .reveal.in .shadow-dot { opacity: 1; }
 
+/* Hero diagram — mode + frontier bullets pulse gently after the line draws in */
+.hero-pulse {
+  transform-box: fill-box;
+  transform-origin: center;
+}
+.reveal.in .hero-pulse-mode {
+  animation: hero-pulse 2.2s ease-in-out 2.2s infinite;
+}
+.reveal.in .hero-pulse-frontier {
+  animation: hero-pulse 2.6s ease-in-out 2.8s infinite;
+}
+@keyframes hero-pulse {
+  0%, 100% { transform: scale(1); opacity: 1; }
+  50%      { transform: scale(1.35); opacity: 0.75; }
+}
+
 .count-up { display: inline-block; }
 
 /* ============================================================
