@@ -609,6 +609,20 @@ section.chapter.paper .pattern-chart { background: var(--cream); }
   max-width: 24ch;
   letter-spacing: -0.01em;
 }
+.pullquote p em {
+  color: var(--orange-deep);
+  font-style: italic;
+}
+
+/* Opening pull quote — tighter rhythm, wider measure so the full contrast reads as one thought */
+.pullquote-opening {
+  padding: 56px 0 72px;
+  border-top: 1px solid var(--navy-15);
+}
+.pullquote-opening p {
+  max-width: 36ch;
+  font-size: clamp(24px, 2.6vw, 34px);
+}
 .pullquote .attr {
   font-family: var(--f-mono);
   font-size: 11px;
